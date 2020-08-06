@@ -3,6 +3,9 @@ import React from 'react';
 const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster'));
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
 
+const MyTables = React.lazy(() => import('./views/mysample/tables/Tables'));
+const MyTableOne = React.lazy(() => import('./views/mysample/tables/TableOne'));
+
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'));
 const Cards = React.lazy(() => import('./views/base/cards/Cards'));
 const Carousels = React.lazy(() => import('./views/base/carousels/Carousels'));
@@ -61,6 +64,11 @@ const routes = [
   { path: '/base/tables', name: 'Tables', component: Tables },
   { path: '/base/tabs', name: 'Tabs', component: Tabs },
   { path: '/base/tooltips', name: 'Tooltips', component: Tooltips },
+  
+  //MyMenu 
+  { path: '/mysample/tables', name: 'MyTables', component: MyTables },
+  { path: '/mysample/tableOne', name: 'MyTableOne', component: MyTableOne },
+
   { path: '/buttons', name: 'Buttons', component: Buttons, exact: true },
   { path: '/buttons/buttons', name: 'Buttons', component: Buttons },
   { path: '/buttons/button-dropdowns', name: 'Dropdowns', component: ButtonDropdowns },
